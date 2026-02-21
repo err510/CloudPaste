@@ -55,7 +55,7 @@ const routes = [
     name: "Home",
     component: HomeView,
     meta: {
-      title: "CloudPaste - 在线剪贴板",
+      title: "qqqCloud",
       originalPage: "home",
     },
   },
@@ -64,7 +64,7 @@ const routes = [
     name: "Upload",
     component: UploadView,
     meta: {
-      title: "文件上传 - CloudPaste",
+      title: "文件上传 - qqqCloud",
       originalPage: "upload",
     },
   },
@@ -74,7 +74,7 @@ const routes = [
     name: "AdminLogin",
     component: createOfflineAwareImport(() => import("../modules/admin/views/AdminLoginView.vue"), "管理员登录"),
     meta: {
-      title: "登录 - CloudPaste",
+      title: "登录 - qqqCloud",
       originalPage: "admin-login",
     },
   },
@@ -83,7 +83,7 @@ const routes = [
     path: "/admin",
     component: createOfflineAwareImport(() => import("../modules/admin/views/AdminLayout.vue"), "管理面板布局"),
     meta: {
-      title: "管理面板 - CloudPaste",
+      title: "管理面板 - qqqCloud",
       originalPage: "admin",
       requiresAuth: true,
     },
@@ -93,7 +93,7 @@ const routes = [
         name: "AdminDashboard",
         component: createOfflineAwareImport(() => import("../modules/admin/views/DashboardView.vue"), "仪表板"),
         meta: {
-          title: "仪表板 - CloudPaste",
+          title: "仪表板 - qqqCloud",
           adminOnly: true, // 只有管理员可访问
         },
       },
@@ -102,7 +102,7 @@ const routes = [
         name: "AdminTextManagement",
         component: createOfflineAwareImport(() => import("../modules/paste/admin/TextManagementView.vue"), "文本管理"),
         meta: {
-          title: "文本管理 - CloudPaste",
+          title: "文本管理 - qqqCloud",
           requiredPermissions: ["text"], // 需要文本权限
         },
       },
@@ -111,7 +111,7 @@ const routes = [
         name: "AdminFileManagement",
         component: createOfflineAwareImport(() => import("../modules/fileshare/admin/FileManagementView.vue"), "文件管理"),
         meta: {
-          title: "文件管理 - CloudPaste",
+          title: "文件管理 - qqqCloud",
           requiredPermissions: ["file"], // 需要文件权限
         },
       },
@@ -120,7 +120,7 @@ const routes = [
         name: "AdminKeyManagement",
         component: createOfflineAwareImport(() => import("../modules/admin/views/KeyManagementView.vue"), "密钥管理"),
         meta: {
-          title: "密钥管理 - CloudPaste",
+          title: "密钥管理 - qqqCloud",
           adminOnly: true, // 只有管理员可访问
         },
       },
@@ -129,7 +129,7 @@ const routes = [
         name: "AdminMountManagement",
         component: createOfflineAwareImport(() => import("../modules/admin/views/MountManagementView.vue"), "挂载管理"),
         meta: {
-          title: "挂载管理 - CloudPaste",
+          title: "挂载管理 - qqqCloud",
           requiredPermissions: ["mount"], // 需要挂载权限
         },
       },
@@ -138,7 +138,7 @@ const routes = [
         name: "AdminFsMetaManagement",
         component: createOfflineAwareImport(() => import("../modules/admin/views/FsMetaManagementView.vue"), "元信息管理"),
         meta: {
-          title: "元信息管理 - CloudPaste",
+          title: "元信息管理 - qqqCloud",
           adminOnly: true, // 只有管理员可访问
         },
       },
@@ -147,7 +147,7 @@ const routes = [
         name: "AdminStorage",
         component: createOfflineAwareImport(() => import("../modules/admin/views/StorageConfigView.vue"), "存储管理"),
         meta: {
-          title: "存储管理 - CloudPaste",
+          title: "存储管理 - qqqCloud",
           adminOnly: true, // 只有管理员可访问
         },
       },
@@ -163,7 +163,7 @@ const routes = [
         name: "AdminScheduledJobs",
         component: createOfflineAwareImport(() => import("../modules/admin/views/ScheduledJobsView.vue"), "定时任务管理"),
         meta: {
-          title: "定时任务管理 - CloudPaste",
+          title: "定时任务管理 - qqqCloud",
           adminOnly: true, // 只有管理员可访问
         },
       },
@@ -172,7 +172,7 @@ const routes = [
         name: "AdminScheduledJobCreate",
         component: createOfflineAwareImport(() => import("../modules/admin/views/ScheduledJobFormView.vue"), "创建定时任务"),
         meta: {
-          title: "创建定时任务 - CloudPaste",
+          title: "创建定时任务 - qqqCloud",
           adminOnly: true,
         },
       },
@@ -181,7 +181,7 @@ const routes = [
         name: "AdminScheduledJobEdit",
         component: createOfflineAwareImport(() => import("../modules/admin/views/ScheduledJobFormView.vue"), "编辑定时任务"),
         meta: {
-          title: "编辑定时任务 - CloudPaste",
+          title: "编辑定时任务 - qqqCloud",
           adminOnly: true,
         },
       },
@@ -190,7 +190,7 @@ const routes = [
         name: "AdminAccountManagement",
         component: createOfflineAwareImport(() => import("../modules/admin/views/AccountManagementView.vue"), "账号管理"),
         meta: {
-          title: "账号管理 - CloudPaste",
+          title: "账号管理 - qqqCloud",
           requiresAuth: true, // 管理员和API密钥用户都可访问
         },
       },
@@ -199,7 +199,7 @@ const routes = [
         name: "AdminBackup",
         component: createOfflineAwareImport(() => import("../modules/admin/views/BackupView.vue"), "数据备份"),
         meta: {
-          title: "数据备份 - CloudPaste",
+          title: "数据备份 - qqqCloud",
           adminOnly: true, // 只有管理员可访问
         },
       },
@@ -208,7 +208,7 @@ const routes = [
         name: "AdminTasks",
         component: createOfflineAwareImport(() => import("../modules/admin/views/AdminTasksView.vue"), "任务管理"),
         meta: {
-          title: "任务管理 - CloudPaste",
+          title: "任务管理 - qqqCloud",
           requiredPermissions: ["mount"],
         },
       },
@@ -217,7 +217,7 @@ const routes = [
         name: "AdminFsIndexManagement",
         component: createOfflineAwareImport(() => import("../modules/admin/views/FsIndexManagement.vue"), "文件系统索引管理"),
         meta: {
-          title: "索引管理 - CloudPaste",
+          title: "索引管理 - qqqCloud",
           adminOnly: true, // 只有管理员可访问
         },
       },
@@ -229,7 +229,7 @@ const routes = [
             name: "AdminGlobalSettings",
             component: createOfflineAwareImport(() => import("../modules/admin/views/settings/GlobalSettingsView.vue"), "全局设置"),
             meta: {
-              title: "全局设置 - CloudPaste",
+              title: "全局设置 - qqqCloud",
               adminOnly: true, // 只有管理员可访问
             },
           },
@@ -239,7 +239,7 @@ const routes = [
             name: "AdminWebDAVSettings",
             component: createOfflineAwareImport(() => import("../modules/admin/views/settings/WebDAVSettingsView.vue"), "WebDAV设置"),
             meta: {
-              title: "WebDAV设置 - CloudPaste",
+              title: "WebDAV设置 - qqqCloud",
               adminOnly: true, // 只有管理员可访问
             },
           },
@@ -248,7 +248,7 @@ const routes = [
             name: "AdminPreviewSettings",
             component: createOfflineAwareImport(() => import("../modules/admin/views/settings/PreviewSettingsView.vue"), "预览设置"),
             meta: {
-              title: "预览设置 - CloudPaste",
+              title: "预览设置 - qqqCloud",
               adminOnly: true, // 只有管理员可访问
             },
           },
@@ -257,7 +257,7 @@ const routes = [
             name: "AdminSiteSettings",
             component: createOfflineAwareImport(() => import("../modules/admin/views/settings/SiteSettingsView.vue"), "站点设置"),
             meta: {
-              title: "站点设置 - CloudPaste",
+              title: "站点设置 - qqqCloud",
               adminOnly: true, // 只有管理员可访问
             },
           },
@@ -271,7 +271,7 @@ const routes = [
     component: PasteView,
     props: true,
     meta: {
-      title: "查看分享 - CloudPaste",
+      title: "查看分享 - qqqCloud",
       originalPage: "paste-view",
     },
   },
@@ -281,7 +281,7 @@ const routes = [
     component: FileView,
     props: true,
     meta: {
-      title: "文件预览 - CloudPaste",
+      title: "文件预览 - qqqCloud",
       originalPage: "file-view",
     },
   },
@@ -293,7 +293,7 @@ const routes = [
       darkMode: route.meta.darkMode || false,
     }),
     meta: {
-      title: "挂载浏览 - CloudPaste",
+      title: "挂载浏览 - qqqCloud",
       originalPage: "mount-explorer",
     },
   },
@@ -305,7 +305,7 @@ const routes = [
       darkMode: route.meta.darkMode || false,
     }),
     meta: {
-      title: "挂载浏览 - CloudPaste",
+      title: "挂载浏览 - qqqCloud",
       originalPage: "mount-explorer",
     },
   },
@@ -314,7 +314,7 @@ const routes = [
     name: "NotFound",
     redirect: "/",
     meta: {
-      title: "页面未找到 - CloudPaste",
+      title: "页面未找到 - qqqCloud",
     },
   },
 ];
@@ -663,8 +663,8 @@ router.afterEach(async (to, from) => {
   // 完成进度条
   NProgress.done();
   // 动态设置页面标题，支持国际化和站点配置
-  let title = "CloudPaste";
-  let siteTitle = "CloudPaste";
+  let title = "qqqCloud";
+  let siteTitle = "qqqCloud";
 
   try {
     // 动态导入站点配置Store
@@ -673,7 +673,7 @@ router.afterEach(async (to, from) => {
 
     // 获取站点标题（如果store已初始化）
     if (siteConfigStore.isInitialized) {
-      siteTitle = siteConfigStore.siteTitle || "CloudPaste";
+      siteTitle = siteConfigStore.siteTitle || "qqqCloud";
     }
 
     // 动态导入 i18n 实例
@@ -751,7 +751,7 @@ router.afterEach(async (to, from) => {
     }
   } catch (error) {
     log.warn("无法加载国际化标题或站点配置，使用默认标题:", error);
-    title = to.meta?.title || "CloudPaste";
+    title = to.meta?.title || "qqqCloud";
   }
 
   document.title = title;
