@@ -93,7 +93,7 @@ export default {
     },
   },
   app: {
-    title: "CloudPaste",
+    title: "秋秋云盘",
   },
   pageTitle: {
     // Main page subtitles (for dynamic composition)

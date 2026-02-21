@@ -397,7 +397,7 @@ export async function addSiteSettings(db) {
   const siteSettings = [
     {
       key: "site_title",
-      value: "CloudPaste",
+      value: "秋秋云盘",
       description: "站点标题，显示在浏览器标签页和页面标题中",
       type: "text",
       group_id: 4,
@@ -433,7 +433,7 @@ export async function addSiteSettings(db) {
     },
     {
       key: "site_footer_markdown",
-      value: "© 2025 CloudPaste. 保留所有权利。",
+      value: "© 2026 秋秋云盘. 保留所有权利。",
       description: "页脚内容，支持 Markdown 格式，留空则不显示页脚",
       type: "textarea",
       group_id: 4,

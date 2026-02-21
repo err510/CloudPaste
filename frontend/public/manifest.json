@@ -1,6 +1,6 @@
 {
-  "name": "CloudPaste",
-  "short_name": "CloudPaste",
+  "name": "秋秋云盘",
+  "short_name": "秋秋云盘",
   "description": "安全分享您的内容，支持 Markdown 编辑和文件上传",
   "start_url": "/",
   "display": "standalone",

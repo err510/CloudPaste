@@ -21,9 +21,9 @@ const { dialogState, confirm, handleConfirm, handleCancel } = useConfirmDialog()
 
 // 站点设置
 const siteSettings = ref({
-  site_title: "CloudPaste",
+  site_title: "秋秋云盘",
   site_favicon_url: "",
-  site_footer_markdown: "© 2025 CloudPaste. 保留所有权利。",
+  site_footer_markdown: "© 2026 秋秋云盘. 保留所有权利。",
   site_announcement_enabled: false,
   site_announcement_content: "",
   site_custom_head: "",
@@ -50,7 +50,7 @@ onMounted(async () => {
     settings.forEach((setting) => {
       switch (setting.key) {
         case "site_title":
-          siteSettings.value.site_title = setting.value || "CloudPaste";
+          siteSettings.value.site_title = setting.value || "秋秋云盘";
           break;
         case "site_favicon_url":
           siteSettings.value.site_favicon_url = setting.value || "";
@@ -96,7 +96,7 @@ const handleSaveBasic = async () => {
   isSavingBasic.value = true;
   try {
     await updateSiteSettings({
-      site_title: siteSettings.value.site_title || "CloudPaste",
+      site_title: siteSettings.value.site_title || "秋秋云盘",
       site_favicon_url: siteSettings.value.site_favicon_url || "",
       site_footer_markdown: siteSettings.value.site_footer_markdown || "",
     });
@@ -177,9 +177,9 @@ const resetSettings = async () => {
 
   if (!confirmed) return;
 
-  siteSettings.value.site_title = "CloudPaste";
+  siteSettings.value.site_title = "秋秋云盘";
   siteSettings.value.site_favicon_url = "";
-  siteSettings.value.site_footer_markdown = "© 2025 CloudPaste. 保留所有权利。";
+  siteSettings.value.site_footer_markdown = "© 2026 秋秋云盘. 保留所有权利。";
   siteSettings.value.site_announcement_enabled = false;
   siteSettings.value.site_announcement_content = "";
   siteSettings.value.site_home_editor_enabled = true;

@@ -290,7 +290,7 @@ export function useFileBasket() {
     if (!window.isSecureContext) return null;
 
     const handle = await window.showSaveFilePicker({
-      suggestedName: suggestedName || "CloudPaste.zip",
+      suggestedName: suggestedName || "qqqCloud.zip",
       types: [
         {
           description: "ZIP 文件",
@@ -306,7 +306,7 @@ export function useFileBasket() {
     return {
       mode: "fs_access",
       writable,
-      fileName: handle?.name || suggestedName || "CloudPaste.zip",
+      fileName: handle?.name || suggestedName || "qqqCloud.zip",
     };
   };
 
@@ -327,7 +327,7 @@ export function useFileBasket() {
       // - File System Access API 的 suggestedName
       // - Blob 模式下 saveAs 的下载文件名
       const timestamp = formatNowForFilename();
-      const suggestedZipFileName = `CloudPaste_${timestamp}.zip`;
+      const suggestedZipFileName = `qqqCloud_${timestamp}.zip`;
 
       // 优先尝试 File System Access API
       /** @type {null | { mode: "fs_access", writable: any, fileName: string }} */
@@ -393,7 +393,7 @@ export function useFileBasket() {
     };
 
     const outputTarget = options?.outputTarget || null;
-    const zipFileName = options?.zipFileName || `CloudPaste_${formatNowForFilename()}.zip`;
+    const zipFileName = options?.zipFileName || `qqqCloud_${formatNowForFilename()}.zip`;
     const isFsAccessMode = outputTarget?.mode === "fs_access" && outputTarget?.writable;
 
     try {

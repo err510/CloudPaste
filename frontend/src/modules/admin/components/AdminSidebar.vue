@@ -506,7 +506,7 @@ const isTaskManagementExpanded = ref(false);
 
 // 站点图标相关计算属性
 const siteFaviconUrl = computed(() => siteConfigStore.siteFaviconUrl);
-const siteTitle = computed(() => siteConfigStore.siteTitle || "CloudPaste");
+const siteTitle = computed(() => siteConfigStore.siteTitle || "秋秋云盘");
 
 // 提取重复的权限判断逻辑
 const userTypeText = computed(() => (props.permissions.isAdmin ? t("admin.sidebar.menuTitle.admin") : t("admin.sidebar.menuTitle.user")));

@@ -1,6 +1,6 @@
 export default {
   login: {
-    adminLogin: "CloudPaste Login",
+    adminLogin: "qqqCloud Login",
     apiKeyAuth: "API Key Authentication",
     username: "Username",
     password: "Password",

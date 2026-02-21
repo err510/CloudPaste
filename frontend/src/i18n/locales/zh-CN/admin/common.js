@@ -1,6 +1,6 @@
 export default {
   login: {
-    adminLogin: "CloudPaste 登录",
+    adminLogin: "秋秋云盘 登录",
     apiKeyAuth: "API 密钥认证",
     username: "用户名",
     password: "密码",
